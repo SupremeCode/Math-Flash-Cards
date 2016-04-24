@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="500.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.DivisionWindowController">
+   <children>
+      <Region layoutX="67.0" layoutY="15.0" prefHeight="257.0" prefWidth="267.0" style="-fx-background-color: #FFF176;" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="72.0" layoutY="167.0" text="=" textAlignment="CENTER">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Label>
+      <Label fx:id="correctStatement" layoutX="57.0" layoutY="339.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Button layoutX="285.0" layoutY="430.0" mnemonicParsing="false" onAction="#goBack" text="Go Back" />
+      <Label fx:id="randomFirst" alignment="CENTER" contentDisplay="CENTER" layoutX="207.0" layoutY="74.0" text="Label">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Label>
+      <Label fx:id="randomSecond" alignment="CENTER" contentDisplay="CENTER" layoutX="87.0" layoutY="74.0" text="Label" textAlignment="RIGHT">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Label>
+      <TextField fx:id="answerField" alignment="CENTER" layoutX="134.0" layoutY="175.0" onKeyPressed="#userAnswers" prefHeight="55.0" prefWidth="133.0">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </TextField>
+      <Button fx:id="answerButton" layoutX="120.0" layoutY="289.0" mnemonicParsing="false" onAction="#checkAnswer" text="Answer" />
+      <Button layoutX="233.0" layoutY="289.0" mnemonicParsing="false" onAction="#beginDivision" text="Next" />
+      <Label layoutX="39.0" layoutY="422.0" text="Score:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="score" layoutX="92.0" layoutY="422.0" text="0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Line endX="100.0" layoutX="201.0" layoutY="167.0" startX="-100.0" />
+      <Line endX="100.0" layoutX="193.0" layoutY="74.0" startX="20.0" />
+      <Line endX="60.0" layoutX="165.0" layoutY="95.0" rotate="-70.0" startX="20.0" />
+      <Line endX="40.0" layoutX="160.0" layoutY="105.0" rotate="50.0" startX="20.0" />
+   </children>
+</AnchorPane>

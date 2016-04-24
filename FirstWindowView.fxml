@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="500.0" prefWidth="400.0" stylesheets="@application.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.FirstWindowController">
+   <children>
+      <Region prefHeight="109.0" prefWidth="400.0" style="-fx-background-color: #0091EA;" />
+      <Button fx:id="closeButton" layoutX="305.0" layoutY="401.0" mnemonicParsing="false" onAction="#closeWindow" text="Close" />
+      <VBox layoutX="150.0" layoutY="135.0" prefHeight="200.0" prefWidth="100.0" spacing="10.0" AnchorPane.bottomAnchor="150.0" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="100.0" AnchorPane.topAnchor="150.0">
+         <children>
+            <Button id="frontButton" fx:id="addition" maxWidth="200.0" mnemonicParsing="false" onAction="#add" prefHeight="50.0" text="Addition" />
+            <Button id="frontButton" fx:id="subtraction" maxWidth="200.0" mnemonicParsing="false" onAction="#subtract" prefHeight="50.0" text="Subtraction" />
+            <Button id="frontButton" fx:id="multiplication" maxWidth="200.0" mnemonicParsing="false" onAction="#multiply" prefHeight="50.0" text="Multiplication" />
+            <Button id="frontButton" fx:id="division" maxWidth="200.0" mnemonicParsing="false" onAction="#divide" prefHeight="50.0" text="Division" />
+         </children>
+      </VBox>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutY="26.0" text="Math Flash Cards" textAlignment="CENTER" textFill="WHITE" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

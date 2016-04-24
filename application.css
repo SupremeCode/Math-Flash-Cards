@@ -1,0 +1,11 @@
+#frontButton{
+	-fx-background-color:#CDDC39;
+	-fx-text-fill: white;
+	-fx-font-size: 20px;
+	-fx-font-weight: bold;
+}
+#levelButton{
+	-fx-background-color: #E65100;
+	-fx-text-fill: white;
+	-fx-border-width: 2;
+}
